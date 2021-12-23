@@ -78,6 +78,10 @@ a:visited {
     color: black;
     font-size: 1.75em;
 }
+#resume a {
+    font-size: 1.50em;
+    float: right;
+}
 .topic {
    font-weight: bold;
 }
