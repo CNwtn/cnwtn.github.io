@@ -92,13 +92,16 @@ a:visited {
     font-size: 3em;
     font-family: 'Dancing Script', cursive;
 }
-#drapery {
+#drapery, #projects {
     margin: auto;
     position: relative;
+    width: 60%;
 }
 #drapery img {
+    display: block;
     padding: 10px;
-    width: 61.5%;
+    width: 100%;
+    height: auto;
 }
 #drapery:hover img {
     filter: blur(5px);
