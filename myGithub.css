@@ -92,12 +92,12 @@ a:visited {
     font-size: 3em;
     font-family: 'Dancing Script', cursive;
 }
-#drapery, #projects {
+#drapery {
     margin: auto;
     position: relative;
     width: 60%;
 }
-#drapery img {
+#drapery img, #stromae img {
     display: block;
     padding: 10px;
     width: 100%;
@@ -109,6 +109,10 @@ a:visited {
 #drapery:hover .linkedPg {
     opacity: 1;
 }
+#stromae {
+    margin: auto;
+    width: 60%;
+}
 #contact {
     display: none;
 }
@@ -116,7 +120,21 @@ a:visited {
     display: inline-block;
     margin-top: 5%;
     margin-bottom: 5%;
+    padding: 40px;
+    border: 3px double #695959;
+    border-radius: 100px;
     text-align: left;
+    font-size: 1.25em;
+}
+#contact img {
+    height: 40px;
+}
+#contact p > a {
+    font-size: 2.5em;
+    color: black;
+}
+#contact a:hover {
+    color: whitesmoke;
 }
 footer {
     padding-top: 10px;
