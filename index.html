@@ -1,7 +1,207 @@
+<!--(c) CaRyn Newton 2021-->
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Portfolio for CaRyn Newton"/>
+        <meta name="google" content="nositelinkssearchbox"/>
+        <meta name="keywords" content="CaRyn Newton, portfolio, web designer"/>
+        <meta name="author" content="CaRyn Newton"/>
+        <link rel="stylesheet" href="myGithub.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@400&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script src="https://kit.fontawesome.com/f810178d5a.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                var b = 0; 
+                var c = 0; 
+                var d = 0;
+                var e = 0;
+                $("#b1").click(function(){
+                    $("#commissions").hide();
+                    $("#resume").hide();
+                    $("#projects").hide();
+                    $("#contact").hide();
+                    $("#about").fadeIn(2000);
+                });
+                $("#b2").click(function(){
+                    b = b + 1;
+                    $("#about").hide();
+                    $("#commissions").hide();
+                    $("#projects").hide();
+                    $("#contact").hide();
+                    $("#resume").fadeIn("slow");
+                    if (b % 2 == 0 && b != 1) { //prevent multiple divs from showing if it has been clicked once
+                        $("#about").delay("fast").fadeIn();
+                        $("#resume").fadeOut();
+                    }
+                    b = 0; //reset so multiple divs don't show
+                });
+                $("#b3").click(function(){
+                    c = c + 1;
+                    $("#about").hide();
+                    $("#resume").hide();
+                    $("#projects").hide();
+                    $("#contact").hide();
+                    $("#commissions").fadeIn("slow");
+                    if (c % 2 == 0 && c != 1) {
+                        $("#about").delay("fast").fadeIn();
+                        $("#commissions").fadeOut("fast");
+                    }
+                    c = 0;
+                });
+                $("#b4").click(function(){
+                    d = d + 1;
+                    $("#about").hide();
+                    $("#resume").hide();
+                    $("#commissions").hide();
+                    $("#contact").hide();
+                    $("#projects").fadeIn("slow");
+                    if (d % 2 == 0 && d != 1) {
+                        $("#about").delay("fast").fadeIn();
+                        $("#projects").fadeOut("fast");
+                    }
+                    d = 0;
+                });
+                $("#b7").click(function(){
+                    e = e + 1;
+                    $("#about").hide();
+                    $("#resume").hide();
+                    $("#commissions").hide();
+                    $("#projects").hide();
+                    $("#contact").fadeIn("slow");
+                    if (e % 2 == 0 && e != 1) {
+                        $("#about").delay("fast").fadeIn();
+                        $("#contact").fadeOut("fast");
+                    }
+                    e = 0;
+                });
+            });
+        </script>
+        <title>CaRyn Newton | Portfolio</title>
+    </head>
+    <body>
+        <!--Begin resume page section-->
+        <div id="resume">
+            <div id="education">
+                <p>Education:</p>
+                <p><i><span class="topic">Northern Virginia Community College</span> &mdash; A.A.S. Information Systems Technology</i><span class="dates">Anticipated Completion Spring 2022</span></p>
+                <p><i><span class="topic">George Mason University</span> &mdash; B.A. Foreign Languages, Chinese; Minor in Japanese Language</i><span class="dates">May 2017</span></p>
+            </div>
+            <div id="experience">
+                <p>Experience:</p>
+                <p><i><span class="topic">Administrative Office of the United States Courts</span>, remote &mdash; IT Student Intern</i><span class="dates">June - August 2021</span></p>
+                <ul>
+                    <li>Conducted research on Microsoft Licenses and phishing prevention methods on a team of interns.</li>
+                    <li>Conducted research on the use of machine learning and natural language processing for the prevention of phishing.</li>
+                    <li>Conducted market research on software that utilizes machine learning and natural language processing for the prevention of phishing.</li>
+                </ul>
+                <p><i><span class="topic">Fore Internaltional Exchange Association</span>, Falls Church, VA &mdash; Program Coordinator</i><span class="dates">January 2018 - May 2019</span></p>
+                <ul>
+                    <li>Used FileMaker and Microsoft Office to promptly process host family applications and track placements.</li>
+                    <li>Maintained communication with host families and students to assure that their programs went smoothly.</li>
+                    <li>Efficiently coordinated with and assisted the field staff and overseas agencies via e-mail and telephone.</li>
+                    <li>Used informative e-mails and eye-catching advertisements to recruit new overseas agencies and host families.</li>
+                    <li>Thoroughly processed student applications and conducted student interviews as needed.
+                </ul>
+                <p><i><span class="topic">Private Tutor</span>, Various Locations, VA &mdash; Tutor</i><span class="dates">January 2014 - May 2017</span></p>
+                <ul>
+                    <li>Tutored students ranging from ages 8-18 in various subjects.</li>
+                    <li>Promoted positive outlooks on studying.</li>
+                    <li>Helped students raise their grade point average and maintain honor roll status.</li>
+                </ul>
+            </div>
+            <div id="honors">
+                <p>Honors and Activities:</p>
+                <ul>
+                    <li>Graduated cum laude <span class="dates">May 2017</span></li>
+                    <li>Certificate of Outstanding Achievement in Intermediate Korean <span class="dates">May 2017</span></li>
+                    <li>Certificate of Excellence in Chinese Major Studies <span class="dates">May 2017</span></li>
+                    <li>Japanese National Honor Society, College Chapter <span class="dates">May 2017</span></li>
+                    <li>Volunteer for Japanese Americans' Care Fund <span class="dates">2016 - Present</span></li>
+                    <li>Students Helping Honduras, Member <span class="dates">2016 - May 2017</span></li>
+                    <li>Chinese Language Club, Member <span class="dates">2015 - May 2017</span></li>
+                    <li>Audit Coordinator, AnimeUSA <span class="dates">2013 - December 2017</span></li>
+                </ul>
+            </div>
+            <div id="Skills">
+                <p>Skills:</p>
+                <ul>
+                    <li><span class="topic">Computer languages:</span> HTML, CSS, JavaScript, and jQuery</li>
+                    <li><span class="topic">Operating Systems:</span> Windows and Linux (Fedora33, MX Linux)</li>
+                    <li><span class="topic">Tools:</span> VirtualBox, Adobe Dreamweaver, FileMaker, and Google Suite</li>
+                    <li><span class="topic">Foreign languages:</span> Chinese, Japanese, Korean, Spanish, Vietnamese, and French</li>
+                </ul>
+            </div>
+            <div id="certs">
+                <p>Certifications:</p>
+                <ul>
+                    <li> HSK Level 3 <span class="dates">May 2016</span></li>
+                    <li> HSKK Beginner Level <span class="dates">May 2016</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--Begin commissions section-->
+        <div id="commissions">
+            <p>Commissions</p>
+            <!--begin Drapery Installers section-->
+            <div id="drapery">
+                <img src="Drapery Installers.gif" alt="Drapery Installers, LLC"/>
+                <div class="linkedPg">
+                    <div class="linkedPgButton">
+                        <a href="https://www.draperyinstallersllc.com">View Full Page</a>
+                    </div>
+                </div>
+            </div>
+            <p>A simple website created for a client who needed a new website for their drapery installation business.</p>
+        </div>
+        <!--begin Individual Projects section-->
+        <div id="projects">
+            <p>Individual Projects</p>
+            <!--begin Stromae Fan Site Project section-->
+            <div id="stromae">
+                <img src="Stromae Site.gif" alt="Stromae Fan Site Project"/>
+            </div>
+            <p>
+                My final project for ITD 110: Web Page Design I at NOVA.<br>
+                It is a fan page dedicated to Belgium singer Stromae
+            </p>
+        </div>
+        <!--begin contact section-->
+        <div id="contact">
+            <p>Contact Information</p>
+            <p style="font-size: 1.75em">
+                <a href="http://https://www.linkedin.com/in/caryn-newton/"><i class="fab fa-linkedin"></i></a> CaRyn Newton
+                <br>
+                <a href="https://github.com/CNwtn"><i class="fab fa-github"></i></a> CNwtn
+                <br>
+                <a href="mailto:ryn.newton@gmail.com"><i class="far fa-envelope"></i></a> Ryn.newton@gmail.com
+            </p>
+        </div>
+        <!--begin about page section-->
+        <div id="about">
+            <h1>CaRyn Newton</h1>
+            <img src="photoOfMe.jpg" alt="CaRyn Newton"/>
+            <p>Hello, and welcome to my portfolio!<br><br>I am a current student
+                at Northern Virginia Community College studying
+                the A.A.S Information Systems Technology Program. <br>
+                I also have a B.A. in foreign languages in Chinese, with a
+                minor in Japanese from George Mason University. <br>After graduation, I aspire to have a career
+                in web development, though I am also interested in A.I. and natural language processing.
+            </p>
+        </div>
+        <!--links-->
+        <div id="links">
+            <button id="b1"><a href="https://cnwtn.github.io/">Home</a></button>
+            <button id="b2">Resume</button>
+            <button id="b3">Commissions</button>
+            <button id="b4">Individual Projects</button>
+            <button><a href="https://www.linkedin.com/in/caryn-newton/" target="_self">LinkedIn</a></button>
+            <button><a href="https://github.com/CNwtn" target="_self">Github</a></button>
+            <button id="b7">Contact</button>
+        </div>
+    </body>
+    <footer>&#169; CaRyn Newton 2021</footer>
 </html>
