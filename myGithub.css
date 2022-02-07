@@ -143,3 +143,63 @@ a:visited {
 footer {
     padding-top: 10px;
 }
+/*for phones*/
+@media screen and (max-width: 480px){
+    #about p {
+        width: 100%;
+        text-align: justify;
+    }
+    #about img {
+        width: 50%;
+    }
+    button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #resume {
+        width: 95%;
+        padding: 20px 10px 60px 5px;
+    }
+    #resume > div {
+        width: 100%;
+        overflow: scroll;
+    }
+    #resume p:first-of-type{
+        font-size: 0.5em;
+        text-align: center;
+    }
+    #resume a {
+        float: none;
+        margin-left: 50%;
+        font-size: 2.5em;
+    }
+    .commissionPreview , .projectPreview {
+        width: 90%;
+        margin: auto;
+    }
+    #contact p > a {
+        font-size: 1em;
+        padding-left: 10px;
+    }
+    #contact img {
+        width: 10%;
+        height: 15%;
+    }
+
+}
+/*for tablets*/
+@media screen and (max-width: 1024px){
+    #about p {
+        width: 90%; 
+    }
+    #resume {
+        width: 80%;
+    }
+    #resume a {
+        font-size: 2em;
+    }
+    .commissionPreview , .projectPreview {
+        width: 90%;
+        margin: auto;
+    }
+}
