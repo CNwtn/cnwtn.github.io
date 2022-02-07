@@ -81,10 +81,10 @@ a:visited {
     font-size: 1.50em;
     float: right;
 }
-.topic {
+.topic { /*resume bulletpoints*/
    font-weight: bold;
 }
-.dates {
+.dates { /*dates on resume*/
     float: right;
     padding-right: 10px;
 }
@@ -95,25 +95,26 @@ a:visited {
     font-size: 3em;
     font-family: 'Dancing Script', cursive;
 }
-#drapery {
+.commissionPreview {
     margin: auto;
     position: relative;
     width: 60%;
 }
-#drapery img, #stromae img {
+.commissionPreview img, .projectPreview img {
     display: block;
     padding: 10px;
     width: 100%;
     height: auto;
 }
-#drapery:hover img {
+.hasDomain:hover img { /*for the sites that have a domain*/
     filter: blur(5px);
 }
-#drapery:hover .linkedPg {
+.commissionPreview:hover .linkedPg, .projectPreview:hover .linkedPg {
     opacity: 1;
 }
-#stromae {
+.projectPreview {
     margin: auto;
+    position: relative;
     width: 60%;
 }
 #contact {
