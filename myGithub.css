@@ -81,6 +81,9 @@ a:visited {
     font-size: 1.50em;
     float: right;
 }
+img[src="resumeImage.png"]{
+    display: none;
+}
 .topic { /*resume bulletpoints*/
    font-weight: bold;
 }
@@ -145,6 +148,9 @@ footer {
 }
 /*for phones*/
 @media screen and (max-width: 480px){
+    html, body {
+        height: 100%;
+    }
     #about p {
         width: 100%;
         text-align: justify;
@@ -157,21 +163,25 @@ footer {
         margin-bottom: 20px;
     }
     #resume {
-        width: 95%;
-        padding: 20px 10px 60px 5px;
-    }
-    #resume > div {
+        background-color: inherit;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        margin: auto;
+        height: 50%;
         width: 100%;
-        overflow: scroll;
     }
-    #resume p:first-of-type{
-        font-size: 0.5em;
-        text-align: center;
+    #downloadIcon {
+        display: none;
     }
-    #resume a {
-        float: none;
-        margin-left: 50%;
-        font-size: 2.5em;
+    img[src="resumeImage.png"]{
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+    #education, #experience, #honors, #skills, #certs {
+        display: none;
     }
     .commissionPreview , .projectPreview {
         width: 90%;
