@@ -147,7 +147,7 @@ footer {
     padding-top: 10px;
 }
 /*for phones*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 740px){
     html, body {
         height: 100%;
     }
@@ -162,6 +162,9 @@ footer {
         width: 100%;
         margin-bottom: 20px;
     }
+    button:first-of-type {
+        margin-top: 10px;
+    }
     #resume {
         background-color: inherit;
         padding: 0;
@@ -169,7 +172,6 @@ footer {
         border-radius: 0;
         margin: auto;
         height: 50%;
-        width: 100%;
     }
     #downloadIcon {
         display: none;
