@@ -129,7 +129,7 @@ img[src="resumeImage.png"]{
     margin-bottom: 5%;
     padding: 40px;
     border: 3px double #504444;
-    border-radius: 100px;
+    border-radius: 10px;
     text-align: left;
     font-size: 1.25em;
 }
@@ -141,12 +141,12 @@ img[src="resumeImage.png"]{
     color: black;
 }
 #contact a:hover {
-    color: whitesmoke;
+    color: gray;
+    filter: grayscale(100%);
 }
 footer {
     padding-top: 10px;
 }
-/*for phones*/
 @media screen and (max-width: 740px){
     html, body {
         height: 100%;
@@ -189,6 +189,10 @@ footer {
         width: 90%;
         margin: auto;
     }
+    #contact p:nth-of-type(2) {
+        padding: 10px;
+        border-radius: 10px;
+    }
     #contact p > a {
         font-size: 1em;
         padding-left: 10px;
@@ -199,7 +203,6 @@ footer {
     }
 
 }
-/*for tablets*/
 @media screen and (max-width: 1024px){
     #about p {
         width: 90%; 
